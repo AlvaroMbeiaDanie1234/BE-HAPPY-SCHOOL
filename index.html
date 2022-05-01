@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title> BE HAPPY SCHOOL | Home </title>
+
+		<!-- Web Fonts -->
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+		<!-- CSS Global Compulsory -->
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- CSS Header and Footer -->
+		<link rel="stylesheet" href="assets/css/header.css">
+		<link rel="stylesheet" href="assets/css/footer.css">
+
+		<!-- CSS Implementing Plugins -->
+		<link rel="stylesheet" href="assets/plugins/line-icons-pro/styles.css">
+		<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
+		<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
+
+		<!-- CSS Customization -->
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+	<!--=== Header v1 ===-->
+	<div class="header-v1">
+	<!-- Topbar -->
+	<div class="topbar-v1">
+	<div class="container">
+	<div class="row">
+	<div class="col-md-6">
+			<ul class="list-inline top-v1-contacts">
+			<li>
+			<i class="fa fa-envelope"></i> WhatsApp: +244927413877 
+			</li>
+			<li>
+			<i class="fa fa-phone"></i> Contacto: +244927413877 
+			</li>
+			</ul>
+</div>
+</div>
+</div>
+</div>
+
+<h3 style="background: skyblue; text-align: center; padding: 5px; border-radius: 10px; font-family: sans-serif;">PROFESSIONAL TRAINING CENTRE BE HAPPY SCHOOL</h3>
+
+<!-- End Topbar -->
+
+
+
+			
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+				<div class="res-container">
+				<ul class="nav navbar-nav">
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+
+
+				<!-- Home  -->
+				<li class="mega-menu-fullwidth">
+				<a href="index.html" >
+				HOME
+				</a>
+
+				</li>
+				<!-- End Home-->
+
+				<!-- About Us -->
+				<li class="mega-menu-fullwidth">
+				<a href="about.html" >
+				SOBRE NÓS
+				</a>	
+				</li>
+				<!-- End About us -->
+
+
+				<!-- Gallery -->
+				<li class="mega-menu-fullwidth">
+				<a href="gallery.html" >
+				GALERIA
+				</a>
+
+				</li>
+				<!-- End Gallery -->
+
+
+				<!-- Blog -->
+				<li class="mega-menu-fullwidth">
+				<a href="blog.html" >
+				NOTICIAS
+				</a>	
+				</li>
+				<!-- End Blog -->
+
+		
+				</ul>
+
+				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+				<!-- End Navbar -->
+
+
+
+			<!-- Slider -->
+			<div id="slide">
+			<div class="slideshow-container">
+			<div class="mySlides fade"> <img src="assets/img/Slider/1.jpg" alt="Slider1" style="width:100%"> </div>
+			<div class="mySlides fade"> <img src="assets/img/Slider/2.jpg" alt="Slider2" style="width:100%"> </div>
+			<div class="mySlides fade"> <img src="assets/img/Slider/3.jpg" alt="Slider3" style="width:100%"> </div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a> <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+			</div>
+			<br>
+			<div style="text-align:center"> 
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+			</div>
+
+			<script>
+			var slideIndex = 0;
+			showSlides();
+			var slides,dots;
+
+			function showSlides() {
+			var i;
+			slides = document.getElementsByClassName("mySlides");
+			dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex> slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 8000); // Change image every 8 seconds
+			}
+
+			function plusSlides(position) {
+			slideIndex +=position;
+			if (slideIndex> slides.length) {slideIndex = 1}
+			else if(slideIndex<1){slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			}
+
+			function currentSlide(index) {
+			if (index> slides.length) {index = 1}
+			else if(index<1){index = slides.length}
+			for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+			}
+			for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[index-1].style.display = "block";  
+			dots[index-1].className += " active";
+			}
+			</script>
+
+
+			<!-- End of Slider -->
+
+		<!--=== Welcome to Unity===-->
+		<div class="container content-md welcomeSection">
+		<div class="row section1">
+		<div class="col-md-6" style="margin-bottom: 40px;" style="border:2px solid black background: green;">
+			<h2 class="title-v2">SEJA BEM-VINDO A <span style="color: #72c02c;"> BE HAPPY SCHOOL </span></h2>
+			<p style="text-align: justify; font-size: 14px;">O centro de Formação da Língua Inglesa oferece para si a solução dos seus desaficios na sua comunicação interativa e na sua área de trabalho.</p>
+			<p style="text-align: justify; font-size: 14px;">Estarias Interessado nos nossos serviços?.</p> 
+			<p style="text-align: justify; font-size: 14px;"> Clique em Ler mais.</p> <br>
+			<a href="Mais.html" class="btn-u btn-brd btn-brd-hover">Ler Mais</a>
+		</div>
+		<div class="col-md-6 overflow-h">
+			<img style="border-radius: 10px; margin-left: 180px; text-decoration-line: overline;" src="assets/img/bg/11.jpg" alt="">
+		</div>
+		</div>
+		</div>
+		<!--=== End About Us ===-->
+
+		<!-- Specialities -->
+		<div class="container" style="margin-top: 50px;">
+		<div class="headline-center" style="margin-bottom: 60px;">
+			
+					</div>
+				</div>
+			</div>
+		</div><!--/end row-->
+		</div><!--/end container-->
+		<!-- End Content Part -->
+				<!-- Plans Start -->
+				<section class="pricingSection">
+				<div class="container" style="margin-top: 20px;">
+				<div class="headline-center">
+					<h2>ACTIVIDADES</h2>
+					<div class="line"></div>
+				<div class="row">
+				<!-- Pricing Item -->
+				<div class="col-md-3 col-xs-6 col-2xs-12">
+					<div style="border-radius: 10px;" class="pricing-v9 hover-effect">
+						<div class="pricing-v9-head">
+							<h3 class="h3"><span class="g-color-default">PALESTRAS </span>ASSUNTOS SOCIAS</h3>
+
+						</div>
+						</ul>
+						<div class="pricing-v9-price">
+						</div>
+					</div>
+				</div>
+				<!-- /Pricing Item -->
+				<!-- Pricing Item -->
+				<div class="col-md-3 col-xs-6 col-2xs-12">
+					<div style="border-radius: 10px;" class="pricing-v9 hover-effect">
+						<div class="pricing-v9-head">
+							<h3 class="h3"><span class="g-color-default">ENTREVISTAS </span>ASSUNTOS ACADÊMICOS</h3>
+						</div>
+						<ul style="list-style-type:none;">
+						</ul>
+						<div class="pricing-v9-price">
+						</div>
+					</div>
+				</div>
+				<!-- /Pricing Item -->
+				<!-- Pricing Item -->
+				<div class="col-md-3 col-xs-6 col-2xs-12">
+					<div style="border-radius: 10px;" class="pricing-v9 hover-effect">
+						<div class="pricing-v9-head">
+							<h3 class="h3"><span class="g-color-default">TRADUÇÃO E INTERPRETAÇÃO </span>TEXTOS E DISCURSOS</h3>
+						</div>
+						<ul style="list-style-type:none;">
+						</ul>
+						<div class="pricing-v9-price">
+						</div>
+					</div>
+				</div>
+				<!-- /Pricing Item -->
+				<!-- Pricing Item -->
+				<div class="col-md-3 col-xs-6 col-2xs-12">
+					<div style="border-radius: 10px;" class="pricing-v9 hover-effect">
+						<div class="pricing-v9-head">
+							<h3 class="h3"><span class="g-color-default">CLUBE DE INGLÊS</span> ASSOCIAÇÃO DE FALANTES</h3>
+						</div>
+						<ul style="list-style-type:none;">
+						</ul>
+						<div class="pricing-v9-price"> 
+						</div>
+					</div>
+				</div>
+				<!-- /Pricing Item -->
+				</div>
+				</div>
+				</div>
+				</section>
+				<!-- End PLANS -->
+
+
+		<!-- Blog part -->
+		<div class="container">
+		<div class="headline-center" style="margin-bottom: 40px;">
+			<h2>LIVROS A VENDA</h2>
+			<div class="line"></div>
+		</div><!--/end Headline Center-->
+
+		<div class="container" style="margin-bottom: 50px;">
+		<div class="row news-v1">
+		<div class="col-md-4" style="margin-bottom: 40px;">
+			<div class="news-v1-in">
+				<img class="img-responsive" src="assets/img/blogs/1.jpg" alt="">
+				<h3><a href="blog.html">COMO DIZER TUDO EM INGLÊS</a></h3>
+				<p>Expressões essencias para conversas cotidianas   </p>
+				<ul class="list-inline news-v1-info">
+					<li><span>By</span> <a href="#">ID 001</a></li>
+					<li style="margin-left: 17px;">|</li>
+					<li style="margin-left: 12px;"><i class="fa fa-clock-o"></i> December 31, 2020</li>
+					<li><a href="blog.html" class="btn-u btn-brd btn-brd-hover blogButton">Ler Mais</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4" style="margin-bottom: 40px;">
+			<div class="news-v1-in">
+				<img class="img-responsive" src="assets/img/blogs/2.jpg" alt="">
+				<h3><a href="blog.html">O QUE É A PSICOLOGIA SOCIAL</a></h3>
+				<p>Introdução a Psicologia Social.</p>
+				<ul class="list-inline news-v1-info">
+					<li><span>By</span> <a href="#">ID 003</a></li>
+					<li style="margin-left: 17px;">|</li>
+					<li style="margin-left: 12px;"><i class="fa fa-clock-o"></i> December 31, 2020</li>
+					<li><a href="blog.html" class="btn-u btn-brd btn-brd-hover blogButton">Ler Mais</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="news-v1-in">
+				<img class="img-responsive" src="assets/img/blogs/3.jpg" alt="">
+				<h3><a href="blog.html">IF ANIMALS COULD TALK</a></h3>
+				<p>Non-humans can prove the existence of God.</p>
+				<ul class="list-inline news-v1-info">
+					<li><span>By</span> <a href="#">ID 002</a></li>
+					<li style="margin-left: 17px;">|</li>
+					<li style="margin-left: 12px;"><i class="fa fa-clock-o"></i> December 31, 2020</li>
+					<li><a href="blog.html" class="btn-u btn-brd btn-brd-hover blogButton">Ler Mais</a></li>
+				</ul>
+			</div>
+		</div>
+		</div>
+		</div>
+		<!-- End News v1 Gray -->
+		</div>
+
+
+
+		<!--=== Footer ===-->
+		<div class="footer-v1">
+		<div class="footer">
+		<div class="container">
+		<div class="row">
+		<!-- About -->
+		<div class="col-md-3 md-margin-bottom-40">
+		<a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo/unity_white.jpg" alt=""></a>
+		<p>Estamos localizado em Luanda no municipio de Cacuaco.</p>
+		<p>Possuimos professores qualificados e com qualidades técnicas-intelectual.</p>
+		</div><!--/col-md-3-->
+		<!-- End About -->
+
+
+
+		<!-- Link List -->
+		<div class="col-md-3" style="margin-bottom: 40px;">
+		<div class="headline"><h2>Menu</h2></div>
+		<ul class="list-unstyled link-list">
+		<li><a href="about.html">Sobre nós</a><i class="fa fa-angle-right"></i></li>
+		<li><a href="Contact.html">Contacte nós</a><i class="fa fa-angle-right"></i></li>
+		</ul>
+		</div><!--/col-md-3-->
+		<!-- End Link List -->
+
+		<!-- Address -->
+		<div class="col-md-3 map-img" style="margin-bottom: 40px;">
+		<div class="headline"><h2>Contact Us</h2></div>
+		<address class="md-margin-bottom-40">
+		BE HAPPY SCHOOL <br />
+		WhatsApp: +244927413877 <br />
+		Contacto: +244927413877<br />
+		Contacto: +244945212183<br>
+		Contacto: +244945364519
+		
+		</address>
+		</div><!--/col-md-3-->
+		<!-- End Address -->
+		</div>
+		</div>
+		</div><!--/footer-->
+
+		<div class="copyright">
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6">
+		<p>
+		2020 &copy; All Rights Reserved.
+		<a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+		</p>
+		</div>
+
+
+
+</body>
+</html>
+
